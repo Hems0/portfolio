@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ega Hemachandra | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+    <!-- Devicons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-text">LOADING... <span id="loading-bar">[░░░░░░░░░░] 0%</span></div>
+    </div>
+
+    <!-- Scanline overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Pixel transition flash -->
+    <div id="pixel-transition-flash" class="pixel-transition"></div>
+
+    <!-- Progress Indicator -->
+    <div id="progress-container" class="progress-container">
+        <div class="progress-label">[ PROGRESS ]</div>
+        <div class="progress-track">
+            <div id="progress-line" class="progress-line"></div>
+        </div>
+    </div>
+
+    <!-- Side Dots Navigation -->
+    <div id="side-dots" class="side-dots"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul id="nav-links">
+                <li><a href="#about" class="nav-item">[ ABOUT ]</a></li>
+                <li><a href="#skills" class="nav-item">[ SKILLS ]</a></li>
+                <li><a href="#projects" class="nav-item">[ PROJECTS ]</a></li>
+                <li><a href="#certificates" class="nav-item">[ CERTS ]</a></li>
+                <li><a href="#contact" class="nav-item">[ CONTACT ]</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <div class="photo-container">
+                    <img src="assets/photo.jpg" alt="Ega Hemachandra" id="hero-photo" onerror="this.src='https://via.placeholder.com/150/0a0e1a/00f5ff?text=EH'">
+                </div>
+                <h1 id="hero-name" data-text=""></h1>
+                <h2 id="hero-tagline"><span class="typewriter-text"></span><span class="cursor">|</span></h2>
+                <div class="hero-actions" id="hero-actions">
+                    <!-- Buttons injected via JS -->
+                </div>
+                <div class="scroll-indicator">
+                    <a href="#about">▼</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="scroll-anim">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-container">
+                <div class="about-text" id="about-text"></div>
+                <div class="about-stats" id="about-stats">
+                    <!-- Stats grid injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="scroll-anim">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="timeline" id="education-timeline">
+                <!-- Timeline injected via JS -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="scroll-anim">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-container" id="skills-container">
+                <!-- Skills injected via JS -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="scroll-anim" tabindex="0">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn pixel-border" id="project-prev">◄</button>
+                <div class="carousel-container" id="projects-grid">
+                    <!-- Projects injected via JS -->
+                </div>
+                <button class="carousel-btn next-btn pixel-border" id="project-next">►</button>
+            </div>
+            
+            <div class="project-scroll-bar">
+                <div class="carousel-progress-fill" id="project-progress"></div>
+            </div>
+            
+            <div class="project-scroll-dots" id="project-dots">
+                <!-- Dots injected via JS -->
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="scroll-anim">
+            <h2 class="section-title">CERTIFICATES</h2>
+            <div class="certs-grid" id="certs-grid">
+                <!-- Certificates injected via JS -->
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="training" class="scroll-anim">
+            <h2 class="section-title">TRAINING & EXPERIENCE</h2>
+            <div class="training-list" id="training-list">
+                <!-- Training injected via JS -->
+            </div>
+        </section>
+
+        <!-- Extracurricular Section -->
+        <section id="extracurricular" class="scroll-anim">
+            <h2 class="section-title">EXTRA-CURRICULAR ACTIVITY</h2>
+            <div class="timeline" id="extracurricular-timeline">
+                <!-- Extracurricular injected via JS -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-anim">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact-container" id="contact-container">
+                <p>Let's connect and build something cool.</p>
+                <div class="contact-links" id="contact-links">
+                    <!-- Links injected via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Ega Hemachandra — Built with 8-bit ♥</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
